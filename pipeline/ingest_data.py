@@ -43,7 +43,7 @@ df_iter = pd.read_csv(
     chunksize=100000
 )
 
-engine = create_engine('postgresql://root:root@localhost:5432/ny_taxi')
+engine = create_engine('postgresql://root:root@postgresdb:5432/ny_taxi')
 
 def run():
     first = True
